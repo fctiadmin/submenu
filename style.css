@@ -1,0 +1,54 @@
+*{
+	padding:0;
+	margin:0;
+}
+.menubar{
+	background:orange;
+	padding:20px 25px;
+}
+.menubar ul{
+	list-style:none;
+}
+.menubar ul li{
+	display:inline;
+	margin:0px 8px;
+	padding:5px 8px;
+	position:relative;
+}
+.menubar ul li a{
+	color:white;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:600;
+}
+.menubar ul li > ul{
+	position:absolute;
+	left:0;
+	background:orange;
+	width:250px;
+	transform:scaleY(0);
+	transition:0.5s;
+	transform-origin:top;
+}
+.menubar ul li > ul li{
+		padding-left:0;
+		display:block;
+		
+}
+.menubar ul li:hover > ul{
+	transform:scaleY(1)
+}
+.menubar ul li > ul li:hover{
+	border-bottom:1px dotted white;
+}
+
+/* #demo{ */
+	/* width:200px; */
+	/* height:200px; */
+	/* background:green; */
+	/* transition:0.5s; */
+	/* transform-origin:top; */
+/* } */
+/* #demo:hover{ */
+	/* transform:scaleY(0); */
+/* } */
